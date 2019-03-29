@@ -1,0 +1,25 @@
+type Film {
+  created: String!
+  director: String!
+  edited: String
+  episode_id: Int!
+  opening_crawl: String!
+  producer: String!
+  release_date: String!
+  title: String!
+  url: String!
+  characters: [String!]!
+  planets: [String!]!
+  starships: [String!]!
+  vehicles: [String!]!
+  species: [String!]!
+}
+
+type FilmsPayload {
+  results: [Film!]!
+}
+
+type Query {
+  getFilms: FilmsPayload!
+  getFilmById (filmId: Int!): Film!
+}

@@ -1,0 +1,24 @@
+type Starship {
+  MGLT: String!
+  cargo_capacity: String!
+  consumables: String!
+  cost_in_credits: String!
+  created: String!
+  crew: String!
+  edited: String!
+  hyperdrive_rating: String!
+  length: String!
+  manufacturer: String!
+  max_atmosphering_speed: String!
+  model: String!
+  name: String!
+  passengers: String!
+  films: [String!]!
+  pilots: [String!]!
+  starship_class: String!
+  url: String!
+}
+
+type Query {
+  getStarshipById (starshipId: Int!): Starship!
+}

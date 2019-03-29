@@ -1,0 +1,13 @@
+{
+  "name": "starwars-app",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean": "npx rimraf node_modules/ **/node_modules"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": "Frank Cooke"
+}

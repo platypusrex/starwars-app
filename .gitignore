@@ -1,0 +1,18 @@
+# editor
+.idea
+
+# dependencies
+**/node_modules/
+
+# production
+packages/web/build
+
+# misc
+.DS_Store
+**/.env
+yarn-debug.log*
+yarn-error.log*
+
+packages/web/schema.json
+packages/web/src/shared/types/generated.ts
+packages/web/schema/serverSchema.graphql
